@@ -1,4 +1,4 @@
-Caso de estudo JUnit 5, parte 1: teste de unidade com o JUnit 5, Mockito e Hamcrest
+### Caso de estudo JUnit 5, parte 1: teste de unidade com o JUnit 5, Mockito e Hamcrest
 
 Configure seu primeiro projeto Maven e comece a escrever testes de unidade robustos com JUnit 5, Hamcrest e Mockito
 
@@ -17,5 +17,6 @@ O Test-driven development (TDD) é um processo de desenvolvimento de software qu
 4. Execute todos os seus testes e observe o novo teste com êxito.
 5. Refatorar o código.
 
+![figura1](imag/figura1.png)
 
 Referencia: https://www.infoworld.com/article/3537563/junit-5-tutorial-part-1-unit-testing-with-junit-5-mockito-and-hamcrest.html
