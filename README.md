@@ -1,13 +1,9 @@
 ## Caso de estudo para JUnit 5: teste de unidade com o JUnit 5, Mockito e Hamcrest
 
-Configure seu primeiro projeto Maven e comece a escrever testes de unidade robustos com JUnit 5, Hamcrest e Mockito
-
 O JUnit 5 é o novo padrão de fato para o desenvolvimento de testes de unidade em Java. Esta versão mais recente deixou para trás as restrições do Java 5 e integrou muitos recursos do Java 8, principalmente o suporte a expressões lambda .
 
-Nesta primeira metade de uma introdução em duas partes do JUnit 5, você começará a testar o JUnit 5. Mostrarei como configurar um projeto Maven para usar o JUnit 5, como escrever testes usando as anotações @Teste @ParameterizedTest, e como trabalhar com as novas anotações do ciclo de vida no JUnit 5. Você também verá um breve exemplo do uso de tags de filtro e mostrarei como integrar o JUnit 5 a uma biblioteca de asserções de terceiros - nesse caso, Hamcrest . Por fim, você obterá uma introdução rápida e tutorial à integração do JUnit 5 com o Mockito, para que você possa escrever testes de unidade mais robustos para sistemas complexos do mundo real.
-
 Desenvolvimento orientado a teste
-Se você desenvolve código Java há algum tempo, provavelmente está familiarizado com o desenvolvimento orientado a testes, por isso vou manter esta seção breve. É importante entender por que escrevemos testes de unidade, no entanto, bem como as estratégias que os desenvolvedores empregam ao projetar testes de unidade.
+Se você desenvolve código Java há algum tempo, provavelmente está familiarizado com o desenvolvimento orientado a testes. É importante entender por que escrevemos testes de unidade, no entanto, bem como as estratégias que os desenvolvedores empregam ao projetar testes de unidade.
 
 O Test-driven development (TDD) é um processo de desenvolvimento de software que entrelaça a codificação, teste e design. É uma abordagem test-first que visa melhorar a qualidade de seus aplicativos. O desenvolvimento orientado a teste é definido pelo seguinte ciclo de vida:
 
@@ -31,8 +27,6 @@ Para criar um componente robusto, você precisa considerar todos os cenários pr
 
 ### JUnit 5
 A classe Assertions e seus métodos
-A  org.junit.jupiter.api.Testanotação indica um método de teste. Observe que a @Testanotação agora vem do pacote da API JUnit 5 Jupiter em vez do pacote da JUnit 4 org.junit. O testConvertToDecimalSuccessmétodo primeiro executa o MathTools::convertToDecimalmétodo com um numerador de 3 e um denominador de 4 e, em seguida, afirma que o resultado é igual a 0,75. A org.junit.jupiter.api.Assertionsclasse fornece um conjunto de staticmétodos para comparar resultados reais e esperados. A Assertionsclasse possui os seguintes métodos, que abrangem a maioria dos tipos de dados primitivos:
-
 - assertArrayEquals compara o conteúdo de uma matriz real com uma matriz esperada.
 - assertEquals compara um valor real a um valor esperado.
 - assertNotEquals compara dois valores para validar que eles não são iguais.
@@ -43,7 +37,7 @@ A  org.junit.jupiter.api.Testanotação indica um método de teste. Observe que 
 - assertNotNull valida que o valor fornecido não é nulo.
 - assertSame valida que dois valores referenciam o mesmo objeto.
 - assertNotSame valida que dois valores não fazem referência ao mesmo objeto.
-- assertThrowsvalida que a execução de um método lança uma exceção esperada (você pode ver isso no testConvertToDecimalInvalidDenominatorexemplo acima).
+- assertThrowsvalida que a execução de um método lança uma exceção esperada (você pode ver isso no testConvertToDecimalInvalidDenominatorexemplo).
 - assertTimeout valida que uma função fornecida seja concluída dentro de um tempo limite especificado.
 - assertTimeoutPreemptively valida que uma função fornecida é concluída dentro de um tempo limite especificado, mas uma vez atingido o tempo limite, ele mata a execução da função.
 -
