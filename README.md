@@ -17,6 +17,6 @@ O Test-driven development (TDD) é um processo de desenvolvimento de software qu
 4. Execute todos os seus testes e observe o novo teste com êxito.
 5. Refatorar o código.
 
-![figura1](imag/figura1.png)
+![figura1](https://github.com/joao-vitor-costa/junit5-unit-test/blob/master/img/figura1.png)
 
 Referencia: https://www.infoworld.com/article/3537563/junit-5-tutorial-part-1-unit-testing-with-junit-5-mockito-and-hamcrest.html
