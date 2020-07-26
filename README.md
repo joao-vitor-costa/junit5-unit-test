@@ -1,7 +1,5 @@
 ## Caso de estudo para JUnit 5: teste de unidade com o JUnit 5, Mockito e Hamcrest
 
-Configure seu primeiro projeto Maven e comece a escrever testes de unidade robustos com JUnit 5, Hamcrest e Mockito
-
 O JUnit 5 é o novo padrão de fato para o desenvolvimento de testes de unidade em Java. Esta versão mais recente deixou para trás as restrições do Java 5 e integrou muitos recursos do Java 8, principalmente o suporte a expressões lambda .
 
 Nesta primeira metade de uma introdução em duas partes do JUnit 5, você começará a testar o JUnit 5. Mostrarei como configurar um projeto Maven para usar o JUnit 5, como escrever testes usando as anotações @Teste @ParameterizedTest, e como trabalhar com as novas anotações do ciclo de vida no JUnit 5. Você também verá um breve exemplo do uso de tags de filtro e mostrarei como integrar o JUnit 5 a uma biblioteca de asserções de terceiros - nesse caso, Hamcrest . Por fim, você obterá uma introdução rápida e tutorial à integração do JUnit 5 com o Mockito, para que você possa escrever testes de unidade mais robustos para sistemas complexos do mundo real.
